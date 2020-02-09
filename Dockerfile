@@ -1,6 +1,6 @@
-FROM i386/ubuntu:xenial
+FROM i386/centos:latest
 
-RUN apt-get update
-
+RUN yum -y update
+RUN yum clean all
 RUN mkdir /app
 WORKDIR /app
